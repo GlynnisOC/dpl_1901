@@ -32,4 +32,9 @@ class LibraryTest < Minitest::Test
     assert_equal true, @dpl.include?("To Kill a Mockingbird")
   end
 
+  def test_library_does_not_have_book
+    assert_equal false, @dpl.include?("A Connecticut Yankee in King Arthur's Court")
+  end 
+
+
 end
