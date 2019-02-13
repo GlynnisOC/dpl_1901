@@ -28,4 +28,8 @@ class LibraryTest < Minitest::Test
     assert_equal [@fifth_season, @kingdoms, @mockingbird], @dpl.books
   end
 
+  def test_does_library_have_a_book
+    assert_equal true, @dpl.include?("To Kill a Mockingbird")
+  end
+
 end
